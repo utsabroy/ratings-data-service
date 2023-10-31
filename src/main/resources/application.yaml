@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ratings-data-service
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: auditevents,beans,conditions,configprops,env,health,httptrace,info,logfile,mappings,metrics,prometheus
